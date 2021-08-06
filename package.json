@@ -1,0 +1,23 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind -o style/style.css -w",
+    "live-server": "live-server",
+    "dev": "concurrently \"npm run build:css\" \"npm run live-server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  },
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "live-server": "^1.2.1"
+  }
+}
